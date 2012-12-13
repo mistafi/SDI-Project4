@@ -9,3 +9,10 @@ function phoneChecker( phone ) {
  }
  return true;
 }
+
+
+
+phoneRegex = /^\(\d{3}\) \d{3}-\d{4}$/; 
+
+
+function emailChecker (){}
