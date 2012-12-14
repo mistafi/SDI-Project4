@@ -4,7 +4,7 @@
 
 
 function phoneChecker( phone ) {
-	phoneRegex = /^\(\d{3}\) \d{3}-\d{4}$/; 
+	var phoneRegex = /^\(\d{3}\) \d{3}-\d{4}$/; 
 		if( !phone.match( phoneRegex ) ) {
 			alert( 'Please enter a valid phone number.' );
 		return false;
@@ -13,7 +13,7 @@ function phoneChecker( phone ) {
 }
 
 function emailChecker( email ){
-	emailRegex = /^([a-zA-Z0-9])+([\.a-zA-Z0-9_-])*@([a-zA-Z0-9])+(\.[a-zA-Z0-9_-]+)+$/;
+	var emailRegex = /^([a-zA-Z0-9])+([\.a-zA-Z0-9_-])*@([a-zA-Z0-9])+(\.[a-zA-Z0-9_-]+)+$/;
  		if( !emailRegex.test( email.value ) ) {
   			alert( 'Please enter a valid email address.' );
   		return false;
