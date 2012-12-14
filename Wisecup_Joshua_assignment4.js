@@ -11,7 +11,7 @@ function phoneChecker( phone ) {
 	return true;
 }
 
-function emailChecker ( email ){
+function emailChecker( email ){
 	emailRegex = /^([a-zA-Z0-9])+([\.a-zA-Z0-9_-])*@([a-zA-Z0-9])+(\.[a-zA-Z0-9_-]+)+$/;
  		if( !emailRegex.test( email.value ) ) {
   			alert( 'Please enter a valid email address' );
@@ -20,7 +20,7 @@ function emailChecker ( email ){
  	return true;
 }
 
-function urlChecker ( url ) {
+function urlChecker( url ) {
 	var urlRegex = /((\bhttps?:\/\/)|(\bwww\.))\S*/;
  		if( !url.match( urlRegex ) ) {
   			alert( 'Please enter a valid URL' );
@@ -30,10 +30,10 @@ function urlChecker ( url ) {
 }
 
 
+function stringCase ( string ) {  
+	return string.toLowerCase().replace(/\b(\w)/g, function ( $1 ) { return $1.toUpperCase(); });
+}  
 
-
-
-function stringCase (){}
 
 function stringSeparator (){}
 
