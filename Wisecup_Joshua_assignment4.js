@@ -22,7 +22,9 @@ function emailChecker ( email ){
 
 
 
-var urlChecker = /((\bhttps?:\/\/)|(\bwww\.))\S*/;
+var urlRegex = /((\bhttps?:\/\/)|(\bwww\.))\S*/
+
+var url = text.match(urlRegex);
 
 
 
