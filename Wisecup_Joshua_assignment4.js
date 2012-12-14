@@ -20,11 +20,16 @@ function emailChecker ( email ){
  	return true;
 }
 
+function urlChecker ( url ) {
+	var urlRegex = /((\bhttps?:\/\/)|(\bwww\.))\S*/
+ 		if( !url.match( urlRegex ) ) {
+  			alert( 'Please enter a valid URL' );
+  		return false;
+ 		}
+ 	return true;
+}
 
 
-var urlRegex = /((\bhttps?:\/\/)|(\bwww\.))\S*/
-
-var url = text.match(urlRegex);
 
 
 
