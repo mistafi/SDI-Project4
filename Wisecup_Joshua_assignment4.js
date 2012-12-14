@@ -21,7 +21,7 @@ function emailChecker ( email ){
 }
 
 function urlChecker ( url ) {
-	var urlRegex = /((\bhttps?:\/\/)|(\bwww\.))\S*/
+	var urlRegex = /((\bhttps?:\/\/)|(\bwww\.))\S*/;
  		if( !url.match( urlRegex ) ) {
   			alert( 'Please enter a valid URL' );
   		return false;
