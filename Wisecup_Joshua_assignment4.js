@@ -22,7 +22,9 @@ function emailChecker ( email ){
 
 
 
-function urlChecker (){}
+var urlChecker = /((\bhttps?:\/\/)|(\bwww\.))\S*/;
+
+
 
 function stringCase (){}
 
