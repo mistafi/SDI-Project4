@@ -4,16 +4,22 @@
 
 function phoneChecker( phone ) {
 	phoneRegex = /^\(\d{3}\) \d{3}-\d{4}$/; 
-	 if( !phone.match( phoneRegex ) ) {
-	  alert( 'Please enter a valid phone number' );
-	  return false;
-	 }
+		if( !phone.match( phoneRegex ) ) {
+			alert( 'Please enter a valid phone number' );
+		return false;
+		}
 	return true;
 }
 
-function emailChecker (){
-emailRegex = /^([a-zA-Z0-9])+([\.a-zA-Z0-9_-])*@([a-zA-Z0-9])+(\.[a-zA-Z0-9_-]+)+$/;
+function emailChecker ( email ){
+	emailRegex = /^([a-zA-Z0-9])+([\.a-zA-Z0-9_-])*@([a-zA-Z0-9])+(\.[a-zA-Z0-9_-]+)+$/;
+ 		if( !emailRegex.test( email.value ) ) {
+  			alert( 'Please enter a valid email address' );
+  		return false;
+ 		}
+ 	return true;
 }
+
 
 
 function urlChecker (){}
