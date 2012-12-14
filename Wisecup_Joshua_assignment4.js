@@ -11,7 +11,10 @@ function phoneChecker( phone ) {
 	return true;
 }
 
-function emailChecker (){}
+function emailChecker (){
+emailRegex = /^([a-zA-Z0-9])+([\.a-zA-Z0-9_-])*@([a-zA-Z0-9])+(\.[a-zA-Z0-9_-]+)+$/;
+}
+
 
 function urlChecker (){}
 
